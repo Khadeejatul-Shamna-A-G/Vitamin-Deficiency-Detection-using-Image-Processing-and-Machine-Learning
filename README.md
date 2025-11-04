@@ -1,4 +1,5 @@
-Vitamin-Deficiency-Detection-using-Image-Processing-and-Machine-Learning. 
+
+# Vitamin-Deficiency-Detection-using-Image-Processing-and-Machine-Learning
 
 
 The idea is to build a non-invasive and cost-effective tool to detect vitamin deficiencies from visible symptoms in body parts like nails and eyes. Created an Android app where users can upload or capture an image. First, the image undergoes processing to clean and standardize it. Then, we extract key features such as texture and color. These features are passed to a CNN model, which was trained on a dataset of labeled images. The model predicts the likely vitamin deficiency, and the result is displayed back to the user in the app.
