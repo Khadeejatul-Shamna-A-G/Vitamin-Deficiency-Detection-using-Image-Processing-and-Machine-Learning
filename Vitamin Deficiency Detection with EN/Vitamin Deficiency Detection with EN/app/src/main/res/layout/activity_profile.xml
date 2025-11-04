@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_view"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/black"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vita"
+                android:fontFamily="@font/core_sans_bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:letterSpacing="0.03"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App"
+                android:fontFamily="@font/core_sans_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:letterSpacing="0.03"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:background="@color/black"
+        android:layout_above="@id/bottom_navigation">
+
+        <LinearLayout
+            android:id="@+id/li1"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/user"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/name_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/core_sans_medium"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:text="User Name"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:letterSpacing="0.04"/>
+
+            <Button
+                android:id="@+id/updatedetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:background="@drawable/rounded_shape"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textAllCaps="false"
+                android:fontFamily="@font/core_sans_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/email_icon"
+                    android:background="@drawable/rounded_shape2"
+                    app:tint="@color/colorAccent"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/emailview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv1"
+                    android:text="Email id"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/core_sans_regular"
+                    android:letterSpacing="0.03"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/phone"
+                    android:background="@drawable/rounded_shape2"
+                    app:tint="@color/colorAccent"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/mobileview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv2"
+                    android:text="9999999999"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/core_sans_regular"
+                    android:letterSpacing="0.03"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/info"
+                    android:background="@drawable/rounded_shape2"
+                    app:tint="@color/colorAccent"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/aboutAppView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv3"
+                    android:text="About App"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/core_sans_regular"
+                    android:letterSpacing="0.03"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logoutRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/logout_icon"
+                    android:background="@drawable/rounded_shape2"
+                    app:tint="@color/colorAccent"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv4"
+                    android:text="Logout"
+                    android:textColor="@color/md_red_400"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/core_sans_regular"
+                    android:letterSpacing="0.03"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

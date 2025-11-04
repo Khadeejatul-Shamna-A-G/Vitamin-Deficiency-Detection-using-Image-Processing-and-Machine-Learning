@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_view"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolBar"
+        android:elevation="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vita"
+                android:fontFamily="@font/core_sans_bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:letterSpacing="0.03"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App"
+                android:fontFamily="@font/core_sans_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:letterSpacing="0.03"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vitamin_txt"
+            android:fontFamily="@font/core_sans_regular"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/grey_font"
+            android:padding="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock Image Detection"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:fontFamily="@font/core_sans_medium"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/defaultColor">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="4dp"
+                        android:src="@drawable/capture_image"
+                        android:layout_alignStart="@id/cp_tv"
+                        android:layout_alignEnd="@id/cp_tv"
+                        app:tint="@color/white"
+                        android:id="@+id/cp"/>
+                    <TextView
+                        android:id="@+id/cp_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take an image"
+                        android:fontFamily="@font/core_sans_light"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/cp"
+                        android:letterSpacing="0.02"
+                        android:layout_marginTop="8dp"
+                        android:includeFontPadding="false"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="4dp"
+                        android:src="@drawable/detection"
+                        android:layout_toEndOf="@id/cp_tv"
+                        android:layout_alignStart="@id/detect_tv"
+                        android:layout_alignEnd="@id/detect_tv"
+                        app:tint="@color/white"
+                        android:id="@+id/detect"/>
+
+                    <TextView
+                        android:id="@+id/detect_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detect"
+                        android:layout_toEndOf="@id/cp_tv"
+                        android:layout_toStartOf="@id/pp_tv"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/core_sans_light"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="0.02"
+                        android:text="Detect Vitamin"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="6dp"
+                        android:src="@drawable/precaution"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignStart="@id/pp_tv"
+                        android:layout_alignEnd="@id/pp_tv"
+                        app:tint="@color/white"
+                        android:id="@+id/pp"/>
+
+                    <TextView
+                        android:id="@+id/pp_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precaution"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/core_sans_light"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/pp"
+                        android:layout_alignParentEnd="true"
+                        android:letterSpacing="0.02"
+                        android:includeFontPadding="false"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detectBtn"
+                    android:text="Detect Now"
+                    android:fontFamily="@font/core_sans_medium"
+                    android:background="@drawable/ripple_login_btn"
+                    android:textSize="17sp"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realtime Detection"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:fontFamily="@font/core_sans_medium"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detect Now"
+            android:fontFamily="@font/core_sans_medium"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:letterSpacing="0.1"
+            android:background="@drawable/ripple_login_btn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="realtimeDetection"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/crops_progree_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait for loading images..."
+            android:fontFamily="@font/core_sans_regular"
+            android:textColor="@color/colorAccent"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.04"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

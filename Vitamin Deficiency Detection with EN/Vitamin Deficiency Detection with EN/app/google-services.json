@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "868346730422",
+    "firebase_url": "https://teachloro.firebaseio.com",
+    "project_id": "teachloro",
+    "storage_bucket": "teachloro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868346730422:android:c88f760e272f993a781317",
+        "android_client_info": {
+          "package_name": "com.example.vitaApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868346730422-e0m0p9nlk8k1n26p4i69eigpsd592gpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vitaApp",
+            "certificate_hash": "8b983f4a73e4b57a4a023275a2fb47f903646823"
+          }
+        },
+        {
+          "client_id": "868346730422-teac3ku7fl4njb7njplmd2kghldo9ki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ZM9MYARkgNGNXWNUxvSpGoJrLlrqXFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868346730422-teac3ku7fl4njb7njplmd2kghldo9ki4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868346730422:android:fbcf9e119d51ed07781317",
+        "android_client_info": {
+          "package_name": "com.example.vitamindeficiencydetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868346730422-teac3ku7fl4njb7njplmd2kghldo9ki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ZM9MYARkgNGNXWNUxvSpGoJrLlrqXFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868346730422-teac3ku7fl4njb7njplmd2kghldo9ki4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

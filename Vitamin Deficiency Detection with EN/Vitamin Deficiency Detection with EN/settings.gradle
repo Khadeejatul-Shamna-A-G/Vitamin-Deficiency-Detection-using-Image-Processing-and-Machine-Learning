@@ -1,0 +1,2 @@
+rootProject.name = "Vitamin Deficiency Detection with EN"
+include ':app'

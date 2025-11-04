@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Vita App</string>
+    <string name="buttonDiagnose">Detect</string>
+    <string name="resultTxt">Your Result</string>
+    <string name="detect_txt">1. First import or capture an image \n2. When is load into the ImageView, you are ready to detect the disease</string>
+    <string name="login">Login</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="register">Register</string>
+    <string name="noconnection">Kindly connect to a WiFi network or enable mobile data</string>
+    <string name="login_now">Login</string>
+
+    <string name="registermail1">\n This is Golap Gunjan BArman , CEO of Vita App! \n\nWelcome onboard with us on behalf of our team !\n
+    We promise to provide unforgettable shopping experience to you in future ! \n\n
+    So What are you waiting for , start shopping and get best of our products right at your doorstep !
+    \n\n
+    We are happy to help you ! In case of any query contact us at our handles mentioned below !\n\n
+    Phone : +91-8638853591\n
+    Email : barmangolap15@gmail.com\n
+    Address : Guwahati, Assam</string>
+    <string name="vitamin_txt">To detect the vitamin deficiency you need to import or capture the image of your <b>nail</b> and <b>eye</b> image.\nThe ML model will detect what vitamin deficiency you have or you\'re going to face.\nAlos you can check the precautions regarding the vitamin deficiency.</string>
+    <string name="showPrecautions">Precaution</string>
+    <string name="checkDef">Check Deficiency</string>
+    <string name="update_details">Update Profile</string>
+    <string name="fill_form">Fill these fields</string>
+    <string name="predict">Predict</string>
+
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="tflite">tflite</string>
+    <string name="nnapi">NNAPI</string>
+    <string name="threads">Threads:</string>
+
+    <string name="model">Model:</string>
+    <string-array name="models">
+        <item>Quantized</item>
+        <item>Float</item>
+    </string-array>
+
+    <string name="device">Device:</string>
+    <string-array name="devices">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+</resources>

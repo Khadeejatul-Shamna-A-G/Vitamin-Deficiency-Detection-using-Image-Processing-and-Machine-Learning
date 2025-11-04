@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EyeDetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_shape2"
+                android:src="@drawable/back_icon"
+                app:tint="@color/white"
+                android:padding="10dp"
+                android:onClick="gotoDiseasePage"
+                android:layout_margin="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_bg"
+                android:layout_margin="16dp"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/mainImage"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/card1"
+                    android:layout_marginEnd="4dp"
+                    android:id="@+id/title"
+                    android:text="Cataract"
+                    android:textSize="21sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/core_sans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Symptoms: "
+                    android:id="@+id/symTV"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/core_sans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Symptoms"
+                    android:layout_marginEnd="4dp"
+                    android:layout_toStartOf="@+id/card1"
+                    android:id="@+id/symptomsHint"
+                    android:layout_toEndOf="@id/symTV"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/core_sans_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/symptomsHint"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Diagnosis: "
+                    android:id="@+id/digTV"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/core_sans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/symptomsHint"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Dignosis"
+                    android:layout_marginEnd="4dp"
+                    android:layout_toStartOf="@+id/card1"
+                    android:id="@+id/diagnosisHint"
+                    android:layout_toEndOf="@id/digTV"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/core_sans_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/diagnosisHint"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Treatments: "
+                    android:id="@+id/treatTV"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/core_sans_medium"/>
+
+                <TextView
+                    android:id="@+id/treatmentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/diagnosisHint"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_toStartOf="@+id/card1"
+                    android:layout_toEndOf="@id/treatTV"
+                    android:fontFamily="@font/core_sans_light"
+                    android:text="Treatments"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/wh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is "
+                    android:fontFamily="@font/core_sans_bold"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/wh"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="disease name"
+                    android:id="@+id/title1"
+                    android:fontFamily="@font/core_sans_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ?"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/core_sans_bold"
+                    android:layout_toEndOf="@id/title1"
+                    android:textSize="19sp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:textSize="16sp"
+                    android:text="decsription"
+                    android:fontFamily="@font/core_sans_light"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/title1"
+                    android:layout_marginTop="4dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/symTV1"
+                    android:text="Symptoms"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/core_sans_bold"
+                    android:textSize="19sp"
+                    android:layout_below="@id/description"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/symptoms"
+                    android:text="Symptoms"
+                    android:fontFamily="@font/core_sans_light"
+                    android:textSize="16sp"
+                    android:layout_below="@id/symTV1"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/causeTV1"
+                    android:text="Cause"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/core_sans_bold"
+                    android:textSize="19sp"
+                    android:layout_below="@id/symptoms"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cause"
+                    android:text="cause"
+                    android:fontFamily="@font/core_sans_light"
+                    android:textSize="16sp"
+                    android:layout_below="@id/causeTV1"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/treatTV1"
+                    android:text="Treatments"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/core_sans_bold"
+                    android:textSize="19sp"
+                    android:layout_below="@id/cause"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/treatments"
+                    android:text="treatments"
+                    android:fontFamily="@font/core_sans_light"
+                    android:textSize="16sp"
+                    android:layout_below="@id/treatTV1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:justificationMode="inter_word"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
